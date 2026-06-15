@@ -1,0 +1,17 @@
+{
+  "short_name": "Balaghni",
+  "name": "بلغني - Balaghni Multipurpose Assistant",
+  "icons": [
+    {
+      "src": "/src/assets/images/baleghni_blue_logo_1781494403562.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "display": "standalone",
+  "orientation": "portrait"
+}

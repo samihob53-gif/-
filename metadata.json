@@ -1,0 +1,12 @@
+{
+  "name": "Remix: Baleghni-بغلني",
+  "description": "تطبيق اداري  والميزات، يضم نظام دردشة ذكي، مدونة ملاحظات منظمة، ونظاماً متطوراً لتقديم وقراءة بلاغات الخدمة.\nSoyez les bienvenues \nAxel sami halimi ",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

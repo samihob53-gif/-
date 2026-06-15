@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900;950&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* =======================================================
+   Traditional Algerian Zellij & Sacred Muslim Geometry CSS Patterns
+   Utilizing official values: Green (#006633), Red (#d21034), Gold (#dfa510)
+   ======================================================= */
+
+.bg-zellij-tile {
+  background-color: #f7faf5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='zellij-geom' fill='%23006633' fill-opacity='0.05'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8/3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3Cpath d='M20 20c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm40 40c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zM30 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zM10 70c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zm60-40c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10z' /%3E%3C/g%3E%3Cg id='zellij-accent' fill='%23dfa510' fill-opacity='0.1'%3E%3Ccircle cx='20' cy='30' r='3'/%3E%3Ccircle cx='60' cy='70' r='3'/%3E%3Ccircle cx='40' cy='10' r='3'/%3E%3Ccircle cx='40' cy='50' r='4'/%3E%3C/g%3E%3Cg id='zellij-red' fill='%23d21034' fill-opacity='0.05'%3E%3Crect x='18' y='8' width='4' height='4' transform='rotate(45 20 10)'/%3E%3Crect x='58' y='48' width='4' height='4' transform='rotate(45 60 50)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .bg-zellij-tile {
+  background-color: #060911;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='zellij-geom' fill='%2310b981' fill-opacity='0.08'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8/3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3Cpath d='M20 20c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm40 40c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zM30 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zM10 70c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zm60-40c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10z' /%3E%3C/g%3E%3Cg id='zellij-accent' fill='%23fbbf24' fill-opacity='0.12'%3E%3Ccircle cx='20' cy='30' r='3'/%3E%3Ccircle cx='60' cy='70' r='3'/%3E%3Ccircle cx='40' cy='10' r='3'/%3E%3Ccircle cx='40' cy='50' r='4'/%3E%3C/g%3E%3Cg id='zellij-red' fill='%23ef4444' fill-opacity='0.08'%3E%3Crect x='18' y='8' width='4' height='4' transform='rotate(45 20 10)'/%3E%3Crect x='58' y='48' width='4' height='4' transform='rotate(45 60 50)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f6f9f5;
+  color: #111a15;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ==========================================
+   Comprehensive Dark Mode Overrides
+   High compliance with existing Tailwind classes
+ ========================================== */
+
+.dark body {
+  background-color: #040811 !important;
+  color: #eceff4 !important;
+}
+
+/* Base backgrounds & panels */
+.dark .bg-white {
+  background-color: #0a101f !important;
+}
+
+.dark .bg-slate-50\/70 {
+  background-color: rgba(4, 8, 17, 0.8) !important;
+}
+
+.dark .bg-slate-50 {
+  background-color: #070d18 !important;
+}
+
+.dark .bg-slate-100 {
+  background-color: #0f1828 !important;
+}
+
+/* Borders */
+.dark .border-slate-100,
+.dark .border-slate-100\/50,
+.dark .border-blue-100 {
+  border-color: #121d30 !important;
+}
+
+.dark .border-slate-150,
+.dark .border-slate-200,
+.dark .border-slate-200\/60,
+.dark .border-slate-200\/50 {
+  border-color: #1a2a44 !important;
+}
+
+/* Text primary and muted */
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-705,
+.dark .text-slate-700 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Input & form fields */
+.dark input,
+.dark textarea {
+  background-color: #070d18 !important;
+  border-color: #1a2942 !important;
+  color: #f8fafc !important;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+  border-color: #10b981 !important;
+  background-color: #0b111e !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #526380 !important;
+}
+
+/* Chat bubble styling */
+.dark .bg-white.text-slate-800.border {
+  background-color: #111a2e !important;
+  color: #f1f5f9 !important;
+  border-color: #1e2c45 !important;
+}
+
+/* Category cards tinted backgrounds - Official Algeria theme */
+.dark .bg-gradient-to-br.from-blue-50\/50.to-blue-100\/20,
+.dark .bg-blue-50\/40 {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05)) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+.dark .text-blue-900, .dark .text-blue-700, .dark .text-blue-700\/80 {
+  color: #34d399 !important;
+}
+
+.dark .bg-gradient-to-br.from-emerald-50\/50.to-emerald-100\/20,
+.dark .bg-emerald-50\/40 {
+  background: linear-gradient(135deg, rgba(6, 95, 70, 0.2), rgba(6, 95, 70, 0.05)) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+.dark .text-emerald-900, .dark .text-emerald-700, .dark .text-emerald-700\/80 {
+  color: #34d399 !important;
+}
+
+.dark .bg-gradient-to-br.from-rose-50\/50.to-rose-100\/20,
+.dark .bg-rose-50\/40 {
+  background: linear-gradient(135deg, rgba(210, 16, 52, 0.15), rgba(210, 16, 52, 0.05)) !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+.dark .text-rose-900, .dark .text-rose-700, .dark .text-rose-700\/80 {
+  color: #fca5a5 !important;
+}
+
+.dark .bg-gradient-to-br.from-indigo-50\/50.to-indigo-100\/20,
+.dark .bg-indigo-50\/40 {
+  background: linear-gradient(135deg, rgba(223, 165, 16, 0.15), rgba(223, 165, 16, 0.05)) !important;
+  border-color: rgba(223, 165, 16, 0.3) !important;
+}
+
+.dark .text-indigo-900, .dark .text-indigo-700, .dark .text-indigo-700\/80 {
+  color: #fde047 !important;
+}
+
+/* Interactive hover & control details */
+.dark .hover\:bg-blue-50:hover,
+.dark .hover\:bg-emerald-50:hover,
+.dark .hover\:bg-rose-50:hover,
+.dark .hover\:bg-slate-50:hover {
+  background-color: #121b2d !important;
+}
+
+.dark .bg-slate-100 .bg-white {
+  background-color: #0b111e !important;
+}
+
+.dark .bg-slate-50.px-4 {
+  background-color: #121927 !important;
+}
+
+.dark .text-amber-600 {
+  color: #fbbf24 !important;
+}
+
+.dark .bg-amber-50 {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+}
+
+.dark .bg-indigo-50 {
+  background-color: rgba(223, 165, 16, 0.1) !important;
+}
