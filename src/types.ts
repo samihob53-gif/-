@@ -37,4 +37,10 @@ export interface Report {
   photoUrl?: string;          // Local snapped/captured or uploaded photo URL
   isLive?: boolean;           // Whether this ticket represents an active live stream
   liveViewerCount?: number;   // Number of citizens/officials currently watching
+  officialStudy?: {
+    studiedBy: string;        // Name of the department head / official
+    officialPhone: string;    // Callable phone number of the inspector / department head
+    investigationNotes: string; // Field notes, assessment, and directives
+    studiedAt: string;        // Timestamp under administrative protocol
+  };
 }

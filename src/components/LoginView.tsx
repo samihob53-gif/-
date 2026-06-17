@@ -166,8 +166,8 @@ export default function LoginView({ onLogin, lang, isDarkMode }: LoginViewProps)
             {/* Absolute overlay for prestigious Algerian look */}
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-900/10 to-transparent pointer-events-none" />
             
-            {/* Algerian rotating circular Flag in Center Header */}
-            <div className="absolute top-4 left-4 relative w-12 h-12 rounded-full overflow-hidden border border-white/95 shadow-lg shrink-0 animate-[spin_25s_linear_infinite] hidden sm:block">
+            {/* Algerian prestigious circular Flag in Center Header */}
+            <div className="absolute top-4 left-4 relative w-12 h-12 rounded-full overflow-hidden border border-white/95 shadow-lg shrink-0 hidden sm:block bg-white">
               <svg viewBox="0 0 100 100" className="w-full h-full">
                 <clipPath id="circleClipAlgeriaLogin">
                   <circle cx="50" cy="50" r="50" />
@@ -175,8 +175,8 @@ export default function LoginView({ onLogin, lang, isDarkMode }: LoginViewProps)
                 <g clipPath="url(#circleClipAlgeriaLogin)">
                   <rect x="0" y="0" width="50" height="100" fill="#006633" />
                   <rect x="50" y="0" width="50" height="100" fill="#ffffff" />
-                  <path d="M 50 25 A 25 25 0 0 0 50 75 A 32 32 0 0 0 50 25" fill="#d21034" />
-                  <polygon points="56,39.5 58.4,46.8 66,46.8 59.8,51.2 62.2,58.5 56,54 49.8,58.5 52.2,51.2 46,46.8 53.7,46.8" fill="#d21034" />
+                  <path d="M 68.75 33.465 A 25 25 0 1 0 68.75 66.535 A 20 20 0 0 0 68.75 33.465" fill="#d21034" />
+                  <polygon points="62.5,42.5 66.9,56.1 55.4,47.7 69.6,47.7 58.1,56.1" fill="#d21034" />
                 </g>
               </svg>
             </div>
@@ -187,8 +187,8 @@ export default function LoginView({ onLogin, lang, isDarkMode }: LoginViewProps)
             </div>
           </div>
           
-          {/* Circular rotating flag on mobile / small screen fallback */}
-          <div className="block sm:hidden relative w-12 h-12 rounded-full overflow-hidden border border-emerald-600/30 shadow-md mb-3 animate-[spin_25s_linear_infinite]">
+          {/* Circular stable flag on mobile / small screen fallback */}
+          <div className="block sm:hidden relative w-12 h-12 rounded-full overflow-hidden border border-emerald-600/30 shadow-md mb-3 bg-white">
             <svg viewBox="0 0 100 100" className="w-full h-full">
               <clipPath id="circleClipAlgeriaLoginMobile">
                 <circle cx="50" cy="50" r="50" />
@@ -196,8 +196,8 @@ export default function LoginView({ onLogin, lang, isDarkMode }: LoginViewProps)
               <g clipPath="url(#circleClipAlgeriaLoginMobile)">
                 <rect x="0" y="0" width="50" height="100" fill="#006633" />
                 <rect x="50" y="0" width="50" height="100" fill="#ffffff" />
-                <path d="M 50 25 A 25 25 0 0 0 50 75 A 32 32 0 0 0 50 25" fill="#d21034" />
-                <polygon points="56,39.5 58.4,46.8 66,46.8 59.8,51.2 62.2,58.5 56,54 49.8,58.5 52.2,51.2 46,46.8 53.7,46.8" fill="#d21034" />
+                <path d="M 68.75 33.465 A 25 25 0 1 0 68.75 66.535 A 20 20 0 0 0 68.75 33.465" fill="#d21034" />
+                <polygon points="62.5,42.5 66.9,56.1 55.4,47.7 69.6,47.7 58.1,56.1" fill="#d21034" />
               </g>
             </svg>
           </div>

@@ -16,12 +16,12 @@ export default function ChatView({ onBack, lang = "ar" }: ChatViewProps) {
   // Language specific welcome message
   const getWelcomeMessage = () => {
     if (lang === "fr") {
-      return "Bienvenue ! Je suis votre assistant intelligent alimenté par le modèle Gemini. Comment puis-je vous aider aujourd'hui ? Vous pouvez me poser des questions sur la gestion du temps, la rédaction, ou l'analyse logistique.";
+      return "Bienvenue ! Je suis votre assistant administratif local indépendant. Comment puis-je vous aider aujourd'hui ? Vous pouvez me poser des questions sur la gestion du temps, la rédaction de documents, ou l'analyse logistique de vos rapports.";
     }
     if (lang === "zgh") {
       return "ⴰⵣⵓⵍ ⴰⵎⵙⵡⵓⵔ ! ⵏⵛⵉⵏ ⴰⵎⵙⴰⵡⴰⵍ ⴷ ⵊⵉⵎⵉⵏⵉ ! ⵎⴰⵏⵉⴽ ⴰⵙ ⵏⵣⵎⵔ ⴰⴷ ⴽ ⵏⴰⵡⵙ ⴰⵙⵙⴰ ? ⵙⴽⵛⴻⵎ ⵜⵉⴱⴰⵍⴰⵖⵏ ⵏ ⵜⴻⴷⵡⴰⵙⵜ.";
     }
-    return "مرحباً بك! أنا مساعدك الذكي المدعوم بنموذج Gemini. كيف يمكنني مساعدتك اليوم؟ يمكنك سؤالي عن تنظيم وقتك، صياغة النصوص، أو تحليل المعلومات ماليًا وإداريًا.";
+    return "مرحباً بك! أنا مساعدك الإداري المحلي والمستقل تماماً لخدمتكم الفورية والآمنة دون الحاجة لشبكة إنترنت أو خوادم خارجية. كيف يمكنني مساعدتك اليوم؟ يمكنك سؤالي عن تنظيم وقتك، صياغة النصوص والوثائق الرسمية، أو تحليل بلاغات ومشاكل الخدمة.";
   };
 
   const [messages, setMessages] = useState<Message[]>([
@@ -157,7 +157,7 @@ export default function ChatView({ onBack, lang = "ar" }: ChatViewProps) {
               {t.chat}
             </h2>
             <p className="text-xs text-slate-400">
-              {lang === "ar" ? "متصل بنموذج المساعد الذكي" : lang === "fr" ? "Connecté au modèle Assistant IA" : "ⵊⴻⵔⵉ ⴰⵎⵙⴰⵡⴰⵍ ⴷ ⵊⵉⵎⵉⵏⵉ"}
+              {lang === "ar" ? "المساعد الإداري المحلي المستقل" : lang === "fr" ? "L'assistant Administratif Local Indépendant" : "ⴰⵎⵙⵡⵓⵔ ⵏ ⵓⵡⵡⵓⵔ - ⴱⴰⵍⵖⵏⵉ"}
             </p>
           </div>
         </div>
@@ -237,15 +237,6 @@ export default function ChatView({ onBack, lang = "ar" }: ChatViewProps) {
             <div className="space-y-1">
               <p className="font-bold">{lang === "ar" ? "فشل إرسال الطلب" : lang === "fr" ? "Échec de l'envoi" : "ⴽⵛⵛⵓⵎ"}</p>
               <p className="text-xs leading-relaxed opacity-90">{errorMsg}</p>
-              {errorMsg.includes("Secrets") && (
-                <div className="mt-2 text-xs text-rose-700 font-medium">
-                  {lang === "ar" ? (
-                    <span>💡 تلميح: توجه إلى القائمة الجانبية في AI Studio وانقر على <b>Settings</b> ثم اضف مفتاح <b>GEMINI_API_KEY</b> الخاص بك ليتم تفعيل الذكاء الاصطناعي بشكل كامل.</span>
-                  ) : (
-                    <span>💡 Indice: Allez dans <b>Settings</b> puis ajoutez votre clé <b>GEMINI_API_KEY</b> dans vos secrets pour activer pleinement l'IA.</span>
-                  )}
-                </div>
-              )}
             </div>
           </div>
         )}

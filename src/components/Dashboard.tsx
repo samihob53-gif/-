@@ -1242,7 +1242,7 @@ export default function Dashboard({
               </h2>
             </div>
             
-            {/* Spinning Algerian Flag Circular Badge inside banner */}
+            {/* Prestigious Algerian Flag Circular Badge inside banner */}
             <div className="hidden sm:flex items-center gap-3 bg-black/40 backdrop-blur-md p-3 rounded-2xl border border-white/10">
               <div className="relative w-11 h-11 rounded-full overflow-hidden border border-white/80 shadow-md bg-white">
                 <div className="absolute inset-0 flex">
@@ -1250,8 +1250,8 @@ export default function Dashboard({
                   <div className="w-1/2 bg-white h-full"></div>
                 </div>
                 <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full">
-                  <path d="M 50 25 A 25 25 0 0 0 50 75 A 32 32 0 0 0 50 25" fill="#d21034" />
-                  <polygon points="56,39.5 58.4,46.8 66,46.8 59.8,51.2 62.2,58.5 56,54 49.8,58.5 52.2,51.2 46,46.8 53.7,46.8" fill="#d21034" />
+                  <path d="M 68.75 33.465 A 25 25 0 1 0 68.75 66.535 A 20 20 0 0 0 68.75 33.465" fill="#d21034" />
+                  <polygon points="62.5,42.5 66.9,56.1 55.4,47.7 69.6,47.7 58.1,56.1" fill="#d21034" />
                 </svg>
               </div>
               <div className="text-right text-white text-[11px] font-bold leading-tight">
@@ -1304,9 +1304,9 @@ export default function Dashboard({
               <div className="w-1/2 bg-[#006633] h-full"></div>
               <div className="w-1/2 bg-white h-full"></div>
             </div>
-            <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full animate-[spin_15s_linear_infinite]" style={{ transformOrigin: 'center' }}>
-              <path d="M 50 25 A 25 25 0 1 0 74.5 50 A 20 20 0 1 1 50 30" fill="#d21034" />
-              <polygon points="62,44 65,36 71,41 68,48 74,52 68,54 71,61 65,56 62,61 62,54 56,52 62,48" fill="#d21034" transform="rotate(-15, 65, 50)" />
+            <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full">
+              <path d="M 68.75 33.465 A 25 25 0 1 0 68.75 66.535 A 20 20 0 0 0 68.75 33.465" fill="#d21034" />
+              <polygon points="62.5,42.5 66.9,56.1 55.4,47.7 69.6,47.7 58.1,56.1" fill="#d21034" />
             </svg>
           </div>
           <div>

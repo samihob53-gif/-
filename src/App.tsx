@@ -221,8 +221,8 @@ export default function App() {
                 <div className="w-1/2 bg-white h-full"></div>
               </div>
               <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full">
-                <path d="M 50 25 A 25 25 0 0 0 50 75 A 32 32 0 0 0 50 25" fill="#d21034" />
-                <polygon points="56,39.5 58.4,46.8 66,46.8 59.8,51.2 62.2,58.5 56,54 49.8,58.5 52.2,51.2 46,46.8 53.7,46.8" fill="#d21034" />
+                <path d="M 68.75 33.465 A 25 25 0 1 0 68.75 66.535 A 20 20 0 0 0 68.75 33.465" fill="#d21034" />
+                <polygon points="62.5,42.5 66.9,56.1 55.4,47.7 69.6,47.7 58.1,56.1" fill="#d21034" />
               </svg>
             </div>
             <div>
@@ -356,13 +356,12 @@ export default function App() {
             {lang === "fr" && "© Balaghni - Plateforme Intelligente de Signalement & Suivi 2026."}
             {lang === "zgh" && "© ⴱⴰⵍⵖⵏⵉ - ⵜⴰⵡⵔⵉⵇⵜ ⵜⵓⵙⵏⵉⵊⵉⵜ ⵏ ⵉⴱⴰⵍⴰⵖⵏ 2026."}
           </p>
-          <div className="flex items-center gap-1 text-slate-300">
+          <div className="flex items-center gap-1 text-slate-400">
             <span>
-              {lang === "ar" && "مدعوم بالكامل بتقنيات"}
-              {lang === "fr" && "Propulsé intégralement par"}
-              {lang === "zgh" && "ⵙ ⵜⵡⵉⵣⵉ ⵏ"}
+              {lang === "ar" && "لوحة تحكم إدارية مدمجة بالكامل ومستقلّة 100%"}
+              {lang === "fr" && "Système d'administration 100% local et autonome"}
+              {lang === "zgh" && "ⴰⵙⵓⵔ ⵏ ⵓⵡⵡⵓⵔ ⴰⴷⴳⴰران"}
             </span>
-            <span className="text-blue-600 font-bold flex items-center gap-0.5">Gemini AI Model <ExternalLink className="w-2.5 h-2.5" /></span>
           </div>
         </div>
       </footer>
